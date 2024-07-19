@@ -15,7 +15,7 @@ public class TipoDocumentoRestController {
     @GetMapping("/{id}")
     public TipoDocumento findTipoDocumento(@PathVariable Long id){
         TipoDocumento tipoDocumento = new TipoDocumento();
-        tipoDocumento.setIdTipoDocumento(1L);
+        tipoDocumento.setIdTipoDocumento(id);
         tipoDocumento.setDescripcion("Cedula de ciudadania");
         tipoDocumento.setSiglas("CC");
         tipoDocumento.setEstado(true);
