@@ -57,10 +57,4 @@ public class RolRestController {
         Rol closeRol = findById(id);
     }
 
-    
-
-
-
-
-
 }
