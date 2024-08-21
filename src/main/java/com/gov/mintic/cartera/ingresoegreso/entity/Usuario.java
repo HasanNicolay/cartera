@@ -1,16 +1,35 @@
 package com.gov.mintic.cartera.ingresoegreso.entity;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "usuarios")
 public class Usuario {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_usuario")
     private Long idUsuario;
+    @ManyToOne
+    @JoinColumn(name = "id_tipo_documento")
     private TipoDocumento tipoDocumento;
+    @Column(name = "numero_identificacion", unique = true)
     private String numeroIdentificacion;
+    @Column(name = "nombre")
     private String nombre;
+    @Column(name = "apellido")
     private String apellido;
+    @Column(name = "usuario", nullable = false)
     private String usuario;
+    @Column(name = "contrasenha", nullable = false)
     private String contrasenha;
+    @ManyToOne
+    @JoinColumn(name = "id_rol", nullable = false)
     private Rol rol;
+    @Column(name = "perfil")
     private Perfil perfil;
+    @Column(name = "estado")
     private boolean estado;
 
     public Long getIdUsuario() {

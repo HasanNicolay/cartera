@@ -4,7 +4,7 @@ package com.gov.mintic.cartera.ingresoegreso.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tipo_documento")
+@Table(name = "tipos_documentos")
 public class TipoDocumento {
 
     @Id
