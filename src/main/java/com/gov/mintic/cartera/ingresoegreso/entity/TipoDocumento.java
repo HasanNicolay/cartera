@@ -1,10 +1,21 @@
 package com.gov.mintic.cartera.ingresoegreso.entity;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "tipo_documento")
 public class TipoDocumento {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_tipo_documento")
     private Long idTipoDocumento;
+    @Column(name = "descripcion", nullable = false)
     private String descripcion;
+    @Column(name = "siglas", nullable = false)
     private String siglas;
+    @Column(name = "estado")
     private boolean estado;
 
     public Long getIdTipoDocumento() {
