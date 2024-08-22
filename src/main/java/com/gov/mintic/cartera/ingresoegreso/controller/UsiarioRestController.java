@@ -43,8 +43,8 @@ public class UsiarioRestController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteUsuario(@PathVariable Long id, @RequestBody Usuario usuario){
-        usuarioService.deleteUsuario(id, usuario);
+    public void deleteUsuario(@PathVariable Long id){
+        usuarioService.deleteUsuario(id);
     }
 
 }

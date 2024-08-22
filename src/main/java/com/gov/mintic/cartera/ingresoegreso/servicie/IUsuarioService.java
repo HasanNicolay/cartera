@@ -16,6 +16,6 @@ public interface IUsuarioService {
 
     public Usuario updateUsuario(Long id, Usuario usuario);
 
-    public void deleteUsuario(Long id, Usuario usuario);
+    public void deleteUsuario(Long id);
 
 }
