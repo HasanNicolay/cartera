@@ -34,14 +34,13 @@ public class RolService implements IRolService {
 
     @Override
     public Rol updateRol(Long id, Rol rol) {
-        Rol putRol = findById(id);
-        putRol.setDescripcion(rol.getDescripcion());
-        putRol.setEstado(rol.isEstado());
+        //Esto solo funciona en springbot
+        Rol putRol = rolRepository.save(rol);
         return putRol;
     }
 
     @Override
-    public void deleteRol(Long id, Rol rol) {
-        Rol closeRol = findById(id);
+    public void deleteRol(Long id) {
+        rolRepository.deleteById(id);
     }
 }

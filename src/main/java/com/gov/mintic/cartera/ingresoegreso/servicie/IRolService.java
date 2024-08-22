@@ -16,6 +16,6 @@ public interface IRolService {
 
     public Rol updateRol(Long id, Rol rol);
 
-    public void deleteRol(Long id, Rol rol);
+    public void deleteRol(Long id);
 
 }
