@@ -38,8 +38,8 @@ public class TipoDocumentoRestController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteTipoDocumento(@PathVariable Long id, @RequestBody TipoDocumento tipoDocumento){
-        tipoDocuemntoService.deleteTipoDocumento(id, tipoDocumento);
+    public void deleteTipoDocumento(@PathVariable Long id){
+        tipoDocuemntoService.deleteTipoDocumento(id);
     }
 
 }

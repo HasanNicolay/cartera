@@ -14,5 +14,5 @@ public interface ITipoDocuemnto {
 
     public TipoDocumento updateTipoDocumento(Long id, TipoDocumento tipoDocumento);
 
-    public void deleteTipoDocumento(Long id, TipoDocumento tipoDocumento);
+    public void deleteTipoDocumento(Long id);
 }
