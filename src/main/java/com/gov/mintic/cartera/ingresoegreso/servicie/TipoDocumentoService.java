@@ -32,7 +32,7 @@ public class TipoDocumentoService implements ITipoDocuemnto{
         TipoDocumento newTipoDocuemnto = tipoDocumentoRepository.save(tipoDocumento);
         return newTipoDocuemnto;
     }
-
+//
     @Override
     public TipoDocumento updateTipoDocumento(Long id, TipoDocumento tipoDocumento) {
         TipoDocumento putTipoDocumento = tipoDocumentoRepository.save(tipoDocumento);
